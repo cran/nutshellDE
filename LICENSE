@@ -1,0 +1,35 @@
+==============
+Beispieldaten:
+==============
+
+Die Audioscrobbler-Daten (Stand 6. Mai 2005) unterliegen der 
+folgenden Creative-Commons-Lizenz:
+
+  http://creativecommons.org/licenses/by-nc-sa/1.0/
+
+Für alle anderen Datendateien gilt die Creative-Commons-Lizenz 
+mit Namensnennung (CC BY 3.0, USA):
+
+  http://creativecommons.org/licenses/by/3.0/us/
+
+Änderungen an den Datensätzen der amerikanischen Originalausgabe 
+beschränken sich auf Eindeutschungen (Datensatz- und Variablennamen, 
+Datenbestand) sowie auf Korrekturen technischer und inhaltlicher 
+Fehler, die dort identifiziert wurden. Detailliertere Informationen 
+sind in der Datei "ChangeLog" protokolliert. 
+
+
+
+===========
+Funktionen:
+===========
+
+Ein Teil der enthaltenen Funktionen wurde von Jörg Beyer erstellt. 
+Diese werden (aus Kompatibilitätsgründen mit dem Rest des Pakets) 
+unter Creative-Commons-Lizenz mit Namensnennung sowie Weitergabe 
+unter gleichen Bedingungen gestellt (CC BY-SA 3.0, Deutschland):
+
+  http://creativecommons.org/licenses/by-sa/3.0/de/
+
+Die entsprechenden Inhalte sind in der Paketdokumentation kenntlich 
+gemacht. 

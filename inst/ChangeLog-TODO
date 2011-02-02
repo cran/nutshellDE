@@ -1,0 +1,71 @@
+===========================================================================
+TODO zum Paket "nutshellDE" (unkorrigierte Fehler) 
+===========================================================================
+
+2010-08-14  Jörg Beyer
+  * Datensatz "Audioscrobbler" ("audioscrobbler") -- Fehlerkorrekturen: 
+  Die Quelldaten enthalten in der Interpretentabelle zig Tausend Einträge 
+  mit Zeichenkodierungsfehlern (a.k.a Byte-Suppe). 
+  Könnte man vielleicht bei Gelegenheit mit einer Mischung aus Perl und 
+  PostgreSQL korrigieren und den Datensatz neu aufbauen. Alle anderen 
+  Informationen wären vorhanden (inkl. Zufallsstichprobenindizes)... 
+
+
+
+2010-06-15  Jörg Beyer
+  * Datensatz "Geburten.2006" ("births2006.smpl") -- unkorrigierte Fehler: 
+  
+  o Faktorisierungsfehler (R-Code) 
+  Die folgenden Variablen hätten evtl. faktorisiert werden können 
+  (laut Dokumentation zu den Quelldaten Klassenkodierung der oberen 
+  Werte): 
+    "Mutter.Alter"    ("MAGER") 
+    "Geburten.gesamt" ("TBO_REC") 
+  Unkorrigiert, weil undramatisch/folgenlos. 
+
+
+
+2010-05-24  Jörg Beyer
+  * Datensatz "Sterbefälle.2006" ("mort06.smpl") -- unkorrigierte Fehler: 
+  Datensatz der Originalausgabe enthält unkorrigierbare Fehler, er hätte 
+  aus den Quelldaten neu aufgebaut werden müssen. 
+  Wurde wg. Fehlen der Stichprobenindizes nicht behoben. Im einzelnen: 
+  
+  o Aufbereitungsfehler (Perl-Code) 
+  Vergl. Hinweis in "Geburten.2006" ("births2006.smpl") zur Definition des 
+  Spaltenlayouts _innerhalb_ der Schleife. 
+  
+  Anzahl Spaltenbreiten: 43  //  Anzahl Spaltennamen: 44 
+  => Spalte "X34" ist überflüssig. Im Code korrigiert. 
+  Auswirkungen auf die Daten unklar, wahrscheinlich keine (die Spalte 
+  ist eine der "Platzhalterspalten" während der Zerlegung mit Perl). 
+  
+  Die folgenden Variablen enthalten Leerzeichen-Missings, die beim 
+  Einlesen in R verloren gegangen sind: 
+    "BildungKL2003      ("Education2003") 
+    "AlterErsetzt"      ("AgeSubstitution") 
+    "AlterKinderKl22"   ("AgeRecodeInfant22") 
+    "UrsacheKategorie"  ("MannerOfDeath") 
+    "TätigkeitsArt"     ("ActivityCode") 
+    "UnfallOrt"         ("PlaceOfInjury") 
+    "EthnSynchr"        ("BridgeRaceFlag") 
+    "EthnImputation"    ("RaceImputationFlag") 
+  Dieses Problem hätte bereits beim Aufbereiten der Daten mit Perl 
+  durch Umkodierung abgefangen werden müssen. Unkorrigiert. 
+  
+  o Importfehler (R-Code) 
+  Vergl. ChangeLog, Hinweis in "Geburten.2006" ("births2006.smpl") zu 
+  "read.csv()". 
+  Vergl. ChangeLog, Hinweis in "Geburten.2006" ("births2006.smpl") zur 
+  Ziehung der Zufallsstichprobe. 
+  Zufallsstichprobe ziehen. 
+  
+  o Faktorisierungsfehler (R-Code) 
+  Diverse Integer-Spalten hätten faktorisiert werden können. 
+  
+  o Rekodierungsfehler (R-Code) 
+  Aus diversen Integer-Spalten hätten die benutzerdefinierten Missings 
+  entfernt werden können. 
+
+
+

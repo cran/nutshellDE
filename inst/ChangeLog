@@ -1,0 +1,838 @@
+===========================================================================
+ChangeLog zum Paket "nutshellDE" 
+===========================================================================
+
+2011-02-02  Jörg Beyer
+  * Paket "nutshellDE" -- Veröffentlichung der Version 1.0-1. 
+  
+  
+  * Paket "nutshellDE" -- Korrekturen: 
+  Datei DESCRIPTION, "Maintainer"-Feld: Änderung der Kontaktadresse 
+  Datei "BBDB.sqlite" von "data/" nach "inst/extdata/" verschoben 
+  (Dank an Prof. B.D. Ripley, Oxford, UK, für die konstruktiven Hinweise) 
+  
+  Hinweis: Der Pfad zur Datenbank muss jetzt mit 
+    system.file("extdata", "BBDB.sqlite", package = "nutshellDE") 
+  statt mit 
+    system.file("data", "BBDB.sqlite", package = "nutshellDE") 
+  bestimmt werden. (Dokumentation wurde angepasst.) 
+  
+  Datei DESCRIPTION, "ZipData"-Feld: ergänzt (Daten sollen nicht gezippt werden) 
+
+
+
+2011-01-30  Jörg Beyer
+  * Paket "nutshellDE" -- Veröffentlichung der Version 1.0-0. 
+
+
+
+2011-01-26  Jörg Beyer
+  * Paket "nutshellDE" -- Korrekturen: 
+  Korrekturen am Lizenzierungsschema wg. FOSS-Kompatibilitätsproblemen. 
+
+
+
+2011-01-24  Jörg Beyer
+  * Paket "nutshellDE" -- Korrekturen: 
+  Letzte Korrekturen und Anpassungen an der Dokumentation. 
+
+
+
+2011-01-24  Jörg Beyer
+  * Paket "nutshellDE" -- Ergänzungen: 
+  Datendatei "Paketliste.csv" (Ordner "extras") neu angelegt => 
+  Tabelle mit Erweiterungspaketen, die in den Beispielen von "R in a Nutshell" 
+  verwendet werden. 
+  Skript zum Einlesen und Aufbereiten der Paketliste als Datenrahmen angelegt. 
+
+
+
+2011-01-12  Jörg Beyer
+  * Dokumentation -- Ergänzungen: 
+  Dokumentationsseite "0-Initialisierung" neu angelegt (Dokumentation und 
+  Begründung der Paketinitialisierung). 
+  Dokumentationsseite "Internal" neu angelegt (interne Daten und Funktionen). 
+
+
+
+2011-01-10  Jörg Beyer
+  * Dokumentation -- Ergänzungen: 
+  ChangeLog neu angelegt. 
+
+
+
+2011-01-10  Jörg Beyer
+  * Paket "nutshellDE" -- Ergänzungen: 
+  Ergänzungen in Datei LICENSE:  Urheberrechtshinweis zu Funktionen, die für 
+  die deutsche Ausgabe neu programmiert wurden. 
+  Ergänzungen in Pakethauptseite:  dito. 
+
+
+
+2011-01-06  Jörg Beyer
+  * Paketinitialisierung -- Programmierung: 
+  Entwicklung des Paketinitialisierungscodes 
+  (interne Funktionen ".initialize.package()", ".getPkgAdminData()" und 
+  ".adjustDataobjectNames()"). 
+  Tests unter Mac OS X 10.6.6 und Windows XP, jeweils mit R 2.11.1. 
+
+
+
+2011-01-04  Jörg Beyer
+  * Dokumentation -- Ergänzungen: 
+  Dokumentation und Beispiele der eigenen Funktionen "auf.NA.setzen()" und 
+  "faktorisieren()" neu angelegt. 
+
+
+
+2011-01-03  Jörg Beyer
+  * Dokumentation -- Ergänzungen: 
+  Dokumentationshauptseite "nutshellDE-package" neu angelegt. 
+  Dateien README und CITATION neu angelegt. 
+
+
+
+2010-12-29  Jörg Beyer
+  * Dokumentation -- Ergänzungen: 
+  Ergänzung von "See Also"-Abschnitten und Querverweisen (a) innerhalb des 
+  Pakets, (b) zu Funktionen außerhalb des Pakets. 
+
+
+
+2010-12-29  Jörg Beyer
+  * Dokumentation -- Ergänzungen: 
+  Kapitelangaben "R in a Nutshell" in den "References"-Abschnitten ergänzt. 
+
+
+
+2010-12-28  Jörg Beyer
+  * Dokumentation -- Fehlerkorrekturen: 
+  Was bedeutet "A 10" zu Beginn von "Sterbestatistik.2006.Stp" 
+  (Abschnitt Description)?  Gelöscht. 
+
+
+
+2010-12-28  Jörg Beyer
+  * Dokumentation -- Fehlerkorrekturen: 
+  Unterdokumentierte Abschnitte überarbeitet und ergänzt: 
+    Audioscrobbler                  Description, Details
+    Batting.2008                    Description, Format 
+    BBDB                            Description, Details 
+    Doktortitel                     Description, Format, Details 
+    Dow.Jones                       Description, Format, Details 
+    Geburtenstatistik.2006.Stp      Description, Format, Details 
+    GSE2034                         Description, Format, Details 
+    Reifen.Schnelllauf              Description, Format 
+    SanFrancisco.Immobilien.Preise  Description, Format, Details 
+    Shiller.Index                   Description, Format, Details 
+    SpamBase                        Description, Format, Details 
+    SPECint2006                     Description, Format 
+    Sterbestatistik.2006.Stp        Description, Format, Details 
+    Team.Batting.00bis08            Description, Format 
+    Toxine.und.Krebs                Description, Format, Details 
+    Verzehr                         Format 
+    Yosemite                        Description, Details 
+    ZR.Lebensmittelpreise           Description, Details 
+
+
+
+2010-12-27  Jörg Beyer
+  * Dokumentation -- Fehlerkorrekturen: 
+  Unzureichende und/oder falsche Quellenangaben überarbeitet: 
+    Audioscrobbler                  Dateigrößen 
+    BBDB                            Quellenangaben; Dateigrößen 
+    Doktortitel                     Quellenangaben 
+    Field.Goals                     Quellenangabe 
+    Geburtenstatistik.2006.Stp      Quellenangaben; Dateigrößen 
+    GSE2034                         Quellenangaben 
+    Reifen.Schnelllauf              Quellenangabe (Korrektur) 
+    SanFrancisco.Immobilien.Preise  Quellenangaben 
+    Shiller.Index                   Quellenangaben 
+    SPECint2006                     Quellenangaben; Dateigröße 
+    Sterbestatistik.2006.Stp        Quellenangaben; Dateigrößen 
+    Toxine.und.Krebs                Quellenangaben 
+    Verzehr                         Quellenangabe 
+
+
+
+2010-12-09  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  (Gut, nicht wirklich an einem Tag ;) 
+  Zuordnungsschema: 
+    audioscrobbler               => Audioscrobbler 
+    batting.2008                 => Batting.2008 
+    bb.db                        => BBDB 
+    births2006.smpl              => Geburtenstatistik.2006.Stp 
+    consumption                  => Verzehr 
+    doctorates                   => Doktortitel 
+    dow30                        => Dow.Jones 
+    field.goals                  => Field.Goals 
+    GSE2034                      => GSE2034 
+    ham.price.ts, turkey.price.ts=> "ZR.Lebensmittelpreise" 
+    mort06.smpl                  => Sterbestatistik.2006.Stp 
+    sanfrancisco.home.sales      => SanFrancisco.Immobilien.Preise 
+    schiller.index               => Shiller.Index 
+    spambase                     => SpamBase 
+    SPECint2006                  => SPECint2006 
+    team.batting.00to08          => Team.Batting.00bis08 
+    tires.sus                    => Reifen.Schnelllauf 
+    toxins.and.cancer            => Toxine.und.Krebs 
+    yosemite                     => Yosemite 
+
+
+
+2010-12-08  Jörg Beyer
+  * Datensatz "ZR.Schinkenpreise" ("ham.price.ts") -- Fehlerkorrekturen: 
+  Diese Zeitreihe beginnt im Original im Jan. 2005 und endet Apr. 2012. 
+  Ein Vergleich mit "ZR.Truthahnpreise" ("turkey.price.ts") legt die 
+  Vermutung nahe, dass sich in der Originalausgabe ein Versatz von 4 
+  Jahren eingeschlichen hat. 
+  Korrigiert. 
+  (Da dieser Fehler erst nach Drucklegung von "R in a Nutshell" bemerkt 
+  wurde, stimmt das Ergebnis des Aufrufs 
+    ccf(ZR.Truthahnpreise, ZR.Schinkenpreise, plot = FALSE)
+  nicht (Kap. 23, letze Seite). 
+
+
+
+2010-12-08  Jörg Beyer
+  * Dokumentation -- Organisation: 
+  Dokumentation der beiden Zeitreihen "ham.price.ts" und "turkey.price.ts" 
+  zusammengelegt. 
+
+
+
+2010-12-08  Jörg Beyer
+  * Dokumentation -- Organisation: 
+  Überflüssigen Abschnitt "Format" aus den folgenden Dokumentationsseiten 
+  gelöscht: "bb.db", "ham.price.ts", "turkey.price.ts", "yosemite". 
+
+
+
+2010-12-08  Jörg Beyer
+  * Dokumentation -- Organisation: 
+  Standardhinweis "This data set is used as an example..." verlegt 
+  (vergl. Empfehlungen in  R-exts.pdf): 
+    audioscrobbler          Description  => References 
+    batting.2008            Description  => References 
+    bb.db                   Details      => References 
+    births2006.smpl         Description  => References 
+    consumption             Description  => References 
+    doctorates              Details      => References 
+    dow30                   Details      => References 
+    field.goals             Details      => References 
+    GSE2034                 Description  => References 
+    ham.price.ts            Details      => References 
+    mort06.smpl             Description  => References 
+    sanfrancisco.home.sales Details      => References 
+    schiller.index          Details      => References 
+    spambase                Details      => References 
+    SPECint2006             Details      => References 
+    team.batting.00to08     Details      => References 
+    tires.sus               Details      => References 
+    toxins.and.cancer       Details      => References 
+    turkey.price.ts         Description  => References 
+    yosemite                Details      => References 
+
+
+
+2010-12-08  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Übersetzung der Dateien DESCRIPTION und LICENSE. 
+
+  * Dokumentation -- Ergänzungen: 
+  Ergänzungen in Datei DESCRIPTION:  Felder "Encoding", "Language", "URL", 
+  "Depends" und "LazyData". 
+  Ergänzungen in Datei LICENSE:  Anmerkungen zu Änderungen an den Daten im 
+  Rahmen der Übersetzung und Bearbeitung. 
+
+
+
+2010-08-14  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Verschiedene Hilfeseiten installationsfähig vorbereitet 
+  (Minimalübersetzung). 
+
+
+
+2010-08-14  Jörg Beyer
+  * Datensatz "Audioscrobbler" ("audioscrobbler") -- Übersetzung: 
+  Datenobjekt umbenannt. 
+  
+  * Datensatz "Audioscrobbler" ("audioscrobbler") -- Fehlerkorrekturen: 
+  Laut Aussage in der Originalausgabe sollte in diesem Transaktionsobjekt 
+  eine Stichprobe von 20.000 Fällen liegen. Tatsächlich sind 20.001 Fälle 
+  enthalten, die _Überschriften_ der beiden Datenspalten wurden in den 
+  Datenkörper mitimportiert (und entsprechend als gültige Fälle behandelt). 
+  Korrigiert durch Ausfiltern und Löschen des Spaltentitel-"Falls". 
+
+
+
+2010-08-11  Jörg Beyer
+  * Datensatz "SpamBase" ("spambase") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "SpamBase" ("spambase") -- Fehlerkorrekturen: 
+  Kategorien der Faktor-Spalte "ist.Spam" ("is_spam") in der 
+  Originalausgabe: "0" und "1" (also Ziffern als Textwerte). 
+  Korrigiert durch Neuaufbau des Faktors ("Nein", "Ja"). 
+  
+  In der Originalausgabe fehlte die Datenstruktur zur Rekonstruktion der 
+  stratifizierten 70%-Zufallsstichprobe. 
+  Korrigiert durch Ziehung einer _neuen_ Stichprobe und Ergänzung des 
+  Datensatzes. 
+
+
+
+2010-08-03  Jörg Beyer
+  * Datensatz "GSE2034" ("GSE2034") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "GSE2034" ("GSE2034") -- didaktische Korrekturen: 
+  Spalten in logische Reihenfolge gebracht. 
+  
+  * Datensatz "GSE2034" ("GSE2034") -- Fehlerkorrekturen: 
+  Die folgende Spalte war als Faktor statt als Zeichenvektor angelegt: 
+    "GEO.Zugangscode" ("GEO.asscession.number" (sic!)) 
+  Korrigiert durch Typumwandlung. 
+  
+  Die folgende Faktor-Spalte enthielt eine statt zwei Kategorien: 
+    "Lymphknoten.Status" ("lymph.node.status") 
+  Korrigiert. 
+
+
+
+2010-07-26  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Verschiedene Hilfeseiten installationsfähig vorbereitet 
+  (Minimalübersetzung). 
+
+
+
+2010-07-26  Jörg Beyer
+  * Datensatz "Shiller.Index" ("schiller.index") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "Shiller.Index" ("schiller.index") -- didaktische Korrekturen: 
+  Datensätze "schiller.index" (sic!) und "schiller.other.data" (sic!) über 
+  Variable "Year" zum Gesamtdatensatz "Shiller.Index" zusammengeführt. 
+  (De facto wurde der Datensatz aus den Quelldaten neu eingelesen.) 
+      [Von "schiller.index" wird die Variable "Real.Home.Price.Index"  
+      beigesteuert ("Hauspreisindex"), von "schiller.other.data" 
+      die Variablen "U.S.Population" ("US.Bevölkerung"), 
+      "Real.Building.Cost.Index" ("Baukostenindex") und 
+      "Long.Bond.Rate" ("Verfallrendite").] 
+  Spalten in logische Reihenfolge gebracht. 
+  
+  * Datensatz "Shiller.Index" ("schiller.index") -- Fehlerkorrekturen: 
+  Die Spalte "US.Bevölkerung" ("U.S.Population" in "schiller.other.data") 
+  wird in den Quelldaten in Millionen angegeben. Daraus wurden in der 
+  Originalausgabe von "R in a Nutshell" absolute Zahlen gemacht. 
+  Datenverfälschung, korrigiert im Rahmen des Neuimports. 
+
+
+
+2010-07-20  Jörg Beyer
+  * Datensatz "SPECint2006" ("SPECint2006") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "SPECint2006" ("SPECint2006") -- didaktische Korrekturen: 
+  Spalten in logische Reihenfolge gebracht. 
+  
+  * Datensatz "SPECint2006" ("SPECint2006") -- Fehlerkorrekturen: 
+  Die folgende Spalte war als Faktor statt als Zeichenvektor angelegt: 
+    "System" ("System") 
+  Korrigiert durch Typumwandlung. 
+  
+  Die Kategorien der folgenden Faktor-Spalte waren unsinnig angelegt: 
+    "Veröffentlichung" ("Published") 
+  Das zugrundeliegende Datum hatte das Speicherformat "MMM-YYYY". Diese 
+  Werte wurden als Text eingelesen und anschließend in alphabetischer 
+  Reihenfolge faktorisiert => Folge: "Apr-2009" kommt vor "Aug-2006", 
+  "Oct-2008" vor "Sep-2006", ... ... ... 
+  Korrigiert durch Typumwandlung und eine Serie von Umformungen. Die 
+  jetzige Reihenfolge der Faktorstufen ist chronologisch korrekt. 
+
+
+
+2010-07-03  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Verschiedene Hilfeseiten installationsfähig vorbereitet 
+  (Minimalübersetzung). 
+
+
+
+2010-07-03  Jörg Beyer
+  * Datensatz "SF.Immo" ("sanfrancisco.home.sales") -- Fehlerkorrekturen: 
+  Datensätze der Pakete nutshell 1.0 und 1.01 waren inkompatibel. Die 
+  Inkonsistenzen führen in der Originalausgabe zu nicht lauffähigen 
+  Beispielen. Der Datensatz "SF.Immo" musste aus den Originaldaten 
+  neu aufgebaut werden. Im einzelnen: 
+  
+  Datensatzstruktur (problematische Spalten sind markiert) 
+  nutshell-1.00   nutshell-1.01   nutshellDE        Inkonsistenz
+  line            ./.             ObjektID          <=
+  county          ./.             County            <=
+  street          street          Straße
+  city            city            Ort
+  zip             zip             ZIP
+  date            saledate        Datum             <= (Name)
+  price           price           Preis
+  bedrooms        bedrooms        Schlafzimmer
+  squarefeet      squarefeet      Grundfläche
+  lotsize         lotsize         Grundstück
+  year            yearbuilt       Baujahr           <= (Name)
+  latitude        ./.             GeoBreite         <=
+  longitude       ./.             GeoLänge          <=
+  month           ./.             JahrMonat         <=
+  neighborhood    ./.             Wohngegend        <=
+  ./.             neighborhood    ZIP.Wohngegend    <=
+  ./.             condolike       Eigentumswohnung  <=
+  
+  Korrigiert: Datensätze der Versionen 1.0-EN und 1.01-EN in PostgreSQL 
+  zusammengeführt; als CSV exportiert; in R reimportiert. 
+
+
+
+2010-07-02  Jörg Beyer
+  * Datensatz "Team.Batting.00bis08" ("team.batting.00to08") -- 
+  Fehlerkorrekturen: 
+  Gravierende Fehler in der SQLite-Datenbank "bb.db" des "nutshell"-Pakets 
+  (SQL-NULL != '')  =>  Folge nach Import mit RSQLite: 0-Werte statt NA 
+  führen zu falschen Berechnungen. 
+  Korrigiert: Datenrahmen durch SQL-Abfrage neu aufgebaut. 
+  
+  * Datensatz "Team.Batting.00bis08" ("team.batting.00to08") -- Übersetzung: 
+  Datenrahmen umbenannt; Nicht-ASCII-Zeichenketten als UTF-8 kodiert und 
+  markiert. 
+
+
+
+2010-07-02  Jörg Beyer
+  * Datensatz "Batting.2008" ("batting.2008") -- Fehlerkorrekturen: 
+  Gravierende Fehler in der SQLite-Datenbank "bb.db" des "nutshell"-Pakets 
+  (SQL-NULL != '')  =>  Folge nach Import mit RSQLite: 0-Werte statt NA 
+  führen zu falschen Berechnungen (Beispiel: Spieler mit 0 Zoll Körpergröße 
+  und 0 Pfund Gewicht). 
+  Korrigiert: Datenrahmen durch SQL-Abfrage neu aufgebaut. 
+
+
+
+2010-07-01  Jörg Beyer
+  * Datensatz "BBDB" ("bb.db") -- Fehlerkorrekturen, Teil 1: 
+  Gravierende Fehler in der SQLite-Datenbank "bb.db" des "nutshell"-Pakets: 
+  In der Originaldatenbank waren leere Felder stereotyp als '' (leerer 
+  String) statt als SQL-NULL in diese Spalten importiert worden -- vor allem 
+  in  _numerischen_  Spalten fatal... NULL != ''. 
+  Folge: RSQLite importiert die betreffenden Werte als 0 statt als NA, 
+  mit der Folge stapelweise falscher Berechnungen (Beispiel: Spieler mit 
+  0 Zoll Körpergröße und 0 Pfund Gewicht). 
+  Betroffen: 229 von 357 Spalten. 
+  Korrigiert: Alle Tabellen der SQLite-Datenbank nach Spalten durchsucht, 
+  die sowohl SQL-NULL als Wert akzeptieren als auch als Standardwert setzen; 
+  per UPDATE-Statements korrigiert. 
+  
+  
+  * Datensatz "BBDB" ("bb.db") -- Fehlerkorrekturen, Teil 2: 
+  Typumwandlung der Daten in den Spalten "Debut" ("debut") und "Abschied" 
+  ("finalGame") von "date" nach "text". Andernfalls kommt es zu Problemen 
+  beim Import in R -- ohne zusätzliche Eingriffe werden Datumsspalten als 
+  (nutzlose) Binärdaten importiert. 
+
+
+
+2010-06-21  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Verschiedene Hilfeseiten installationsfähig vorbereitet 
+  (Minimalübersetzung). 
+
+
+
+2010-06-21  Jörg Beyer
+  * Datenpaket "SanFrancisco.Immobilien.Preise" ("sanfrancisco.home.sales") 
+  -- Fehlerkorrekturen: 
+  Fallvektor zur Stichprobenaufteilung "sanfrancisco.home.sales.testing.indices" 
+  hatte den Datentyp "character" statt "integer". 
+  Korrigiert durch Typumwandlung. 
+  
+  
+  * Datensatz "SF.Immo" ("sanfrancisco.home.sales") -- Fehlerkorrekturen: 
+  Spalte "ZIP" ("zip") war als Integer angelegt. Nicht alles, was wie eine 
+  Zahl aussieht, ist auch eine -- Postleitzahlen sind grundsätzlich 
+  Textwerte. Prinzipiell gravierender Fehler wg. potentieller Datenverfälschung 
+  (obwohl hier ohne praktische Konsequenz). 
+  Korrigiert durch Typumwandlung. 
+  
+  Die folgenden Spalten waren als Faktoren statt als Zeichenvektoren angelegt: 
+    "County"            ("county") 
+    "Straße"            ("street") 
+    "Ort"               ("city") 
+    "JahrMonat"         ("month") 
+  Korrigiert durch Typumwandlung. 
+  
+  
+  * Datensatz "SF.Immo" ("sanfrancisco.home.sales") -- didaktische Korrekturen: 
+  Spalte "JahrMonat" ("month") neu aus den Daten berechnet. 
+  Spalten "Grundfläche" ("squarefeet") und "Grundstück" ("lotsize") von 
+  Quadratfuß in Quadratmeter umgerechnet und ganzzahlig gerundet. 
+  Spalten in logische Reihenfolge gebracht. 
+  
+  
+  * Datensatz "SF.Immo" ("sanfrancisco.home.sales") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+
+
+
+2010-06-21  Jörg Beyer
+  * Datensatz "Reifen.Schnelllauf" ("tires.sus") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "Reifen.Schnelllauf" ("tires.sus") -- Fehlerkorrekturen: 
+  Die folgenden Spalten lagen als Faktoren statt als Zeichenvektoren vor: 
+    "DOT.Code"          ("Dot_Number") 
+    "Defekt.Typ"        ("Failure_Type") 
+    "Defekt.Anmerkungen" ("Failure.Notes") 
+    "Photo.1"           ("Photo_1") 
+    "Photo.2"           ("Photo_2") 
+    "Photo.3"           ("Photo_3") 
+    "Photo.4"           ("Photo_4") 
+  Korrigiert durch Typumwandlung. 
+  
+  Die folgenden Spalten lagen als Faktoren statt als Datumsspalten vor: 
+    "Probe.Datum        ("Collection_Date") 
+    "RechnungsDatum     ("Invoice_Date") 
+    "DOT.WocheJahr      ("Dot_MidWeekDate") 
+  Korrigiert durch Typumwandlung. 
+  
+  Kategorien der folgenden Variable waren alphabetisch statt logisch 
+  angeordnet: 
+    "Position"          ("Position") 
+  Korrigiert. 
+
+
+
+2010-06-16  Jörg Beyer
+  * Datensatz "Geburten.2006" ("births2006.smpl") -- Fehlerkorrekturen: 
+  Datensatz der Originalausgabe enthielt z.T. unkorrigierbare Fehler 
+  und musste aus den Quelldaten neu aufgebaut werden. 
+  Im einzelnen: 
+  
+  o Aufbereitungsfehler (Perl-Code) 
+  Statt das Spaltenlayout _außerhalb_ der Schleife zu montieren, wurde es 
+  _innerhalb_ der Schleife bei jedem Lauf erneut montiert, und zusätzlich 
+  mit dem eher verpönten Punkt-Operator statt mit "join()". Bei mehreren 
+  Millionen Datensätzen ein Performance-Killer. 
+  Korrigiert durch Verlegung der Spaltenlayout-Variable außerhalb der 
+  Schleife. 
+  
+  Die folgende Variable enthält einen Leerzeichen-Missing, der beim 
+  Einlesen in R verloren geht: 
+    "MutterBildung"   ("DMEDUC") 
+  Dieses Problem muss bereits beim Aufbereiten der Daten mit Perl 
+  durch Umkodierung abgefangen werden. Korrigiert. 
+  
+  
+  o Importfehler (R-Code) 
+  Beim Import mit "read.csv()" fehlten zwei entscheidende Argumente: 
+    as.is = TRUE        (R soll keine Typumwandlungen durchführen) 
+    strip.white = TRUE  (Leerzeichen am Anfang und Ende von Textvariablen 
+                        sollen entfernt werden) 
+    Der ursprüngliche Aufruf führt potentiell zu einem gewissen Anteil 
+    Datenmüll, der aufwändige Nachbearbeitungen erzwingen würde. 
+  Die 10%-Zufallsstichprobe wurde _nach_ den Arbeitsschritten Rekodierung 
+    und Faktorisierung gezogen, statt vorher -- kostspieliger strategischer 
+    Fehler im Programmablauf. 
+  Beide Fehler beim Neuaufbau des Datensatzes korrigiert. 
+  
+  
+  o Rekodierungsfehler (R-Code) 
+  Die Rekodierungen waren allgemein zu umständlich und fehleranfällig. 
+  2 Beispiele: 
+  Bestimmte Werte wurden nach der Logik "Objekt <- NA" auf NA gesetzt, 
+    statt mit "is.na(<Objekt>) <- TRUE". Selbst wenn R das meist 
+    toleriert, gilt das als unsauber und mögliche Problemquelle, weil 
+    R für das Ergebnis nicht immer garantieren kann. 
+  Auf keinen Fall werden NAs über kostspielige und unflexible 
+    "ifelse()"-Anweisungen zugewiesen. 
+  Durch Neuprogrammierung der Rekodierungslogik korrigiert. 
+  
+  Die folgenden Variablen hätten rekodiert werden müssen, andernfalls 
+  werden Missings zu gültigen Daten: 
+    "Schwangerschaft"   ("ESTGEST")   -- Funktion wurde nicht aufgerufen 
+    "PränatalDiagn"     ("UPREVIS")   -- Variable wurde ignoriert 
+    "Mutter.Bildung"    ("DMEDUC")    -- Variable wurde ignoriert 
+    "Entbindung"        ("DMETH_REC") -- Variable wurde ignoriert 
+    "AnzahlSäuglinge"   ("DPLURAL")   -- Variable wurde ignoriert 
+  Fehler, im Rahmen der Neuprogrammierung korrigiert. 
+  
+  
+  o Faktorisierungsfehler (R-Code) 
+  4 allgemeine Probleme: 
+  Fehlende Werte wurden in den Faktorisierungsfunktionen falsch 
+    oder gar nicht behandelt. 
+  Die Art der Faktorisierung in der Originalausgabe führt dazu, dass 
+    Kategorien, die nicht in den Daten vorkommen, verworfen werden. 
+  Die Art der Faktorisierung in der Originalausgabe führt dazu, dass 
+    R die Kategorien in _alphabetischer_ statt in logischer Reihenfolge 
+    anlegt. 
+  Zur Behebung dieses Problems wurde gelegentlich versucht, durch 
+    Voranstellen einer Ziffer vor die Kategoriennamen doch noch eine 
+    logische Ordnung zu erzwingen ("DPLURAL": "1 Single", "2 Twins", ...). 
+  Gravierende Fehler, Datenverfälschung. Durch Neuprogrammierung der 
+  Faktorisierungslogik korrigiert. 
+  
+  Die folgende Variable hätte faktorisiert werden müssen: 
+    "Geburt.Wtag"       ("DOB_WK")    -- Variable wurde ignoriert 
+  Der Wochentag der Geburt ist eine katgoriale, keine numerische Variable. 
+  Fehler, im Rahmen der Neuprogrammierung korrigiert. 
+  
+  
+  * Datensatz "Geburten.2006" ("births2006.smpl") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+
+
+
+2010-06-15  Jörg Beyer
+  * Funktionen "auf.NA.setzen()" und "faktorisieren()" 
+  Wegen der problematischen und fehlerhaften Datenaufbereitung der 
+  beiden Datensätze "Geburten.2006" ("births2006.smpl") und 
+  "Sterbefälle.2006" ("mort06.smpl") in der Originalausgabe mussten 
+  die Funktionen von J. Adler verworfen werden. 
+  Korrigiert durch Neukonzeption und Entwicklung einer eigenen Lösung. 
+
+
+
+2010-06-06  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Verschiedene Hilfeseiten installationsfähig vorbereitet 
+  (Minimalübersetzung). 
+
+
+
+2010-06-06  Jörg Beyer
+  * Datensatz "Yosemite" ("yosemite") -- Übersetzung: 
+  Matrix umbenannt. 
+
+  * Datensatz "Yosemite" ("yosemite") -- Fehlerkorrekturen: 
+  Die Daten wurden im Original als transponierte Matrix eingelesen 
+  (spalten- statt zeilenweise). Datenverfälschung, GridFloat-Daten laufen 
+  *zeilenweise*. 
+  Korrigiert durch Typumwandlung in Vektor und anschließenden Neuaufbau 
+  der Matrix (inkl. Plausibilitätstests). 
+
+
+
+2010-06-04  Jörg Beyer
+  * Datensatz "Doktortitel" ("doctorates") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+
+
+
+2010-06-03  Jörg Beyer
+  * Datensatz "Toxine.und.Krebs" ("toxins.and.cancer") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "Toxine.und.Krebs" ("toxins.and.cancer") -- didaktische 
+  Korrekturen: 
+  Spalten in logische Reihenfolge gebracht. 
+  
+  * Datensatz "Toxine.und.Krebs" ("toxins.and.cancer") -- Fehlerkorrekturen: 
+  Spalte "Bundesstaat" ("State"): 
+  Überschüssige Leerzeichen am Ende der Kategoriennamen entfernt. 
+  Spalte "Bundesstaat" ("State"):   Faktor mit 50 Kategorien versus 
+  Spalte "BStaat" ("State_Abbrev"): Faktor mit 51 Kategorien: 
+  in "Bundesstaat" fehlte die Kategorie "Washington, D.C." (Gegenstück 
+  "DC" in "BStaat"/"State_Abbrev"). 
+  Korrigiert und synchronisiert. 
+
+
+
+2010-06-03  Jörg Beyer
+  * Datenpaket "Dow.Jones" -- Fehlerkorrekturen: 
+  Tickersymbole der Dow-Jones-Unternehmen waren fehlerhaft/überholt. 
+  Neuen Zeichenvektor "DJ.Notierungen" mit den aktualisierten Symbolen 
+  angelegt und abgespeichert 
+  
+  * Datensatz "DJ" ("dow30") -- Fehlerkorrekturen: 
+  Wegen diversen Fehlern im Notierungsvektor und den Hilfsfunktionen 
+  neu aufgebaut (nach Korrektur der Funktionen und des Symbolvektors). 
+  
+  Die folgende Spalte war als Faktor statt als Datum angelegt: 
+    "Datum" ("Date") 
+  Korrigiert durch Typumwandlung. 
+  
+  * Datensatz "DJ" ("dow30") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+
+
+
+2010-06-02  Jörg Beyer
+  * Funktion "Wertpapiere.abfragen()" ("get.multiple.quotes()") -- 
+  didaktische und Fehlerkorrekturen: 
+  Argumente "von" ("from") und "bis" ("to") hatten problematische 
+  Standardwerte (vergl. Funktion "Kurse.abfragen()" ("get.quotes()")). 
+  Korrigiert (plus ein paar kleine Eingriffe in Code-Layout und Aufruf 
+  der Hauptfunktion "Wertpapiere.abfragen()"). 
+
+
+
+2010-06-02  Jörg Beyer
+  * Funktion "Kurse.abfragen()" ("get.quotes()") -- Fehlerkorrekturen: 
+  Argumente "von" ("from") und "bis" ("to") waren anderen als den 
+  Standardwerten nur im Ausnahmefall gewachsen => kontra-intuitive, 
+  teils nutzlose, teil falsche Intervalle. 
+  Korrigiert durch Änderung der Standardwerte und Ergänzung zusätzlicher 
+  Funktionslogik. (Die überarbeitet Lösung ist immer noch nicht 100% sauber, 
+  läuft aber auch in Grenzfällen ganz gut und berücksichtigt z.B., wenn ein 
+  Start- hinter dem Enddatum liegt.) 
+  
+  Yahoo!-Finanzen-API, URL-Montage:  der HTTP-Parameter für den End-Monat 
+  ist  "d",  nicht  "a",  was auffällt, sobald man die Funktion mit anderen 
+  Werten als den Defaults aufruft und ein paar Fälle durchspielt. 
+  Korrigiert. 
+  
+  Wird die Funktion mit einem Symbol aufgerufen, das bei Yahoo!-Finanzen 
+  unbekannt ist, bricht sie mit einem uniformativen HTTP-404-Fehler und ohne 
+  jedes Ergebnis ab. Das ist insbesondere dann lästig, wenn "Kurse.abfragen()" 
+  ("get.quotes()") von "Wertpapiere.abfragen()" ("get.multiple.quotes()") 
+  aufgerufen wird und mehrere Wertpapiere gleichzeitig abfragt -- dann bleibt 
+  völlig unklar, bei welchem Symbol die Funktion abbricht. 
+  Korrigiert durch Ergänzung eines Fehler-Handlers. 
+  
+  
+  * Funktion "Kurse.abfragen()" ("get.quotes()") -- didaktische Korrekturen: 
+  [Defensiver] Aufruf von  "URLencode()"  fehlte, auch wenn der Originalcode 
+  nicht direkt falsch ist -- nur unvorsichtig. 
+  Korrigiert. 
+  
+  Die Funktion gibt eine CSV-Datei mit englischen Spaltennamen zurück. 
+  Diese sollten innerhalb der Funktion lokalisiert werden. 
+  Erledigt (wenn auch aus Platzgründen nicht sehr robust). 
+
+
+
+2010-05-31  Jörg Beyer
+  * Dokumentation -- Übersetzung: 
+  Verschiedene Hilfeseiten installationsfähig vorbereitet 
+  (Minimalübersetzung). 
+
+
+
+2010-05-31  Jörg Beyer
+  * Datensatz "Batting.2008" ("batting.2008") -- Übersetzung: 
+  Datenrahmen umbenannt; Nicht-ASCII-Zeichenketten als UTF-8 kodiert und 
+  markiert. 
+
+
+
+2010-05-31  Jörg Beyer
+  * Datenbank "BBDB" ("bb.db") -- Übersetzung: 
+  Ausgewählte kategoriale Spalten übersetzt. 
+
+
+
+2010-05-28  Jörg Beyer
+  * Datenbank "BBDB" ("bb.db") -- Übersetzung: 
+  ...im SQL-Skript: Tabellen umbenannt; Spaltennamen übersetzt. 
+  SQLite-Datenbank neu aufgebaut, Daten-Dumps geladen. 
+
+
+
+2010-05-24  Jörg Beyer
+  * Datensatz "Sterbefälle.2006" ("mort06.smpl") -- Fehlerkorrekturen: 
+  Die Variable "Alter.exakt" ("AgeDetail") ist laut Dokumentation der 
+  Quelldaten alphanumerisch kodiert, kein Integer! 
+  Gravierender Fehler, Datenverfälschung. Korrigiert durch Typumwandlung 
+  in Zeichenvektor. 
+  
+  Kategorien der folgenden Variablen waren alphabetisch statt logisch 
+  angeordnet: 
+    "Geschlecht"        ("Sex") 
+    "Zivilstand"        ("MaritalStatus") 
+    "ArbeitsUnfall"     ("InjuryAtWork") 
+    "BestattungsArt"    ("MethodOfDisposition") 
+    "Autopsie"          ("Autopsy") 
+    "Ethnizität"        ("Race") 
+    "Ursache"           ("Cause") 
+  Korrigiert. 
+  
+  Falsch benannte Spalten (legt zumindest die Originaldokumentation nahe): 
+    "CauseRecord39"  statt  "CauseRecode39" 
+    "RaceRecord5"    statt  "RaceRecode5" 
+  Im Rahmen der Übersetzung korrigiert. 
+  
+  Vergl. auch Datensatz "Geburten.2006" ("births2006.smpl") sowie die 
+  Anmerkungen in der Datei ChangeLog-TODO. 
+  
+  
+  * Datensatz "Sterbefälle.2006" ("mort06.smpl") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+
+
+
+2010-05-03  Jörg Beyer
+  * Datensatz "ZR.Schinkenpreise" ("ham.price.ts") -- Übersetzung: 
+  Zeitreihe umbenannt. 
+
+
+
+2010-05-03  Jörg Beyer
+  * Datensatz "ZR.Truthahnpreise" ("turkey.price.ts") -- Übersetzung: 
+  Zeitreihe umbenannt. 
+
+
+
+2010-05-03  Jörg Beyer
+  * Datensatz "Google.Suche.nach.Bacon" ("top.bacon.searching.cities") -- 
+  Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "Google.Suche.nach.Bacon" ("top.bacon.searching.cities") -- 
+  Fehlerkorrekturen: 
+  Die folgende Spalte war als Faktor statt als Zeichenvektor angelegt: 
+    "Stadt" ("city") 
+  Korrigiert durch Typumwandlung. 
+
+
+
+2010-04-22  Jörg Beyer
+  * Datensatz "Verzehr" ("consumption") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "Verzehr" ("consumption") -- didaktische Korrekturen: 
+  Spalten in logische Reihenfolge gebracht. 
+
+
+
+2010-04-22  Jörg Beyer
+  * Datensatz "Field.Goals" ("field.goals") -- Übersetzung: 
+  Datenrahmen umbenannt; Spaltennamen übersetzt; Faktor-Level übersetzt; 
+  Nicht-ASCII-Zeichenketten als UTF-8 kodiert und markiert. 
+  
+  * Datensatz "Field.Goals" ("field.goals") -- didaktische Korrekturen: 
+  Spalten in logische Reihenfolge gebracht. 
+  
+  * Datensatz "Field.Goals" ("field.goals") -- Fehlerkorrekturen: 
+  Kategorien der folgenden Variable waren alphabetisch statt logisch 
+  angeordnet: 
+    "Stadion" ("stadium") 
+  Korrigiert. 
+
+
+
+2010-04-05  Jörg Beyer
+  * Paket "nutshellDE" 
+  Einrichtung des deutschen Pakets mit der initialen Version 0.1-0. 

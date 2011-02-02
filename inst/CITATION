@@ -1,0 +1,25 @@
+citHeader(paste(sep = "", "Sie können \"R in a Nutshell\" ", 
+						  "und das Paket \"nutshellDE\" ", 
+						  "folgendermaßen zitieren: ")) 
+
+citEntry(entry 			= "Book", 
+		title     		= "R in a Nutshell [deutsche Ausgabe]", 
+		author 			= personList(as.person("Joseph Adler")), 
+		publisher 		= "O'Reilly Verlag", 
+		address 		= "Köln", 
+		edition 		= "1.", 
+		year 			= 2010, 
+		isbn 			= "978-3-89721-649-5", 
+		url 			= "http://www.oreilly.de/catalog/rinanutger/index.html", 
+		note 			= "Paket nutshellDE-1.0-0 mit Beispieldaten und Begleitcode", 
+		
+		textVersion 	= paste(sep = "", 
+							"Adler, J. (2010), ", 
+							"R in a Nutshell [deutsche Ausgabe]. ", 
+							"O'Reilly Verlag, Köln, ", 
+							"ISBN 978-3-89721-649-5." 
+							) 
+) 
+
+
+

@@ -1,0 +1,39 @@
+Sämtliche Textdateien in diesem Paket sind UTF-8-kodiert, Zeilenenden sind 
+nach Unix-Konvention gesetzt. Sollte Ihr Text- oder Code-Editor keine UTF-8-
+kodierten Dateien unterstützen, empfiehlt es sich, einen besser ausgestatteten 
+zu installieren. 
+
+Die Zeichenkodierung der Dateien darf nicht geändert werden, andernfalls 
+kommt es zu Installationsproblemen. 
+
+
+
+WICHTIGER HINWEIS 
+
+Beim ersten Laden des nutshellDE-Pakets nach der Installation kann es einige 
+Sekunden dauern, bis R eine Statusmeldung anzeigt und zur Eingabezeile 
+zurückkehrt -- wenn man nicht damit rechnet, wirkt es, als hätte sich der 
+Ladevorgang aufgehängt. 
+
+Diese Verzögerung ist normal und nach unserem Kenntnisstand unvermeidlich! 
+Bitte warten Sie einfach geduldig ab, bis R Ihnen wieder den Prompt zeigt. 
+
+Nähere Informationen zu den Gründen erhalten Sie in der Paketdokumentation 
+(Abschnitt "Initialisierung"). 
+
+
+
+ERRATA
+
+Bedingt durch eine notwendige Änderung an der Paketstruktur nach Drucklegung 
+hat sich die Bestimmung des Pfads der SQLite-Datenbank "BBDB" geringfügig 
+geändert. Der Pfad muss jetzt mit 
+
+  system.file("extdata", "BBDB.sqlite", package = "nutshellDE")
+
+statt mit 
+
+  system.file("data", "BBDB.sqlite", package = "nutshellDE")
+
+bestimmt werden. Die Dokumentation wurde angepasst. 
+
