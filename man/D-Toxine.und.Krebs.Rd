@@ -92,6 +92,7 @@ Daten zu Toxin-Emissionen und Krebserkankungen in den USA
   \code{\link{Sterbestatistik.2006.Stp}}. 
 }
 \examples{
+\dontrun{
 ## Daten laden; Datensatz in Suchpfad einhängen 
 data(Toxine.und.Krebs)
 attach(Toxine.und.Krebs)
@@ -113,5 +114,6 @@ text(x = Luft.vor.Ort/Fläche,
 
 ## Datensatz aus Suchpfad entfernen 
 detach(Toxine.und.Krebs)
+}
 }
 \keyword{datasets}

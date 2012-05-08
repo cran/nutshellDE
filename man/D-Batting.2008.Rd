@@ -80,7 +80,7 @@ Batting-Daten der Spieler im Major League Baseball, Saison 2008
 }
 \examples{
 \dontrun{
-library(RSQLite)
+if(require(RSQLite)) { 
 
 ## Daten laden (Variante 1: aus der Datenbank) 
 ## Verbindung zur Datenbank einrichten und 
@@ -121,5 +121,6 @@ data.frame(MW = tapply(Batting.2008$HR,
                        INDEX = Batting.2008$TeamID, 
                        FUN = sd, na.rm = TRUE)
            )
+}
 }
 \keyword{datasets}

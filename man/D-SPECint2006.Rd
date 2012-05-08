@@ -56,6 +56,7 @@ Integer-Benchmark SPECint2006
   \emph{R in a Nutshell}, Kap. 18. 
 }
 \examples{
+\dontrun{
 ## Daten laden 
 data(SPECint2006)
 
@@ -77,5 +78,6 @@ t.test(SPECint2006.1x2$Baseline,
        SPECint2006.1x2$Ergebnis, 
        paired = TRUE, 
        alternative = "less")
+}
 }
 \keyword{datasets}

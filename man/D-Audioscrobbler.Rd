@@ -50,7 +50,7 @@ Audioscrobbler-Nutzerdaten (bis Mai 2005)
 }
 \examples{
 \dontrun{
-library(arules)
+if(require(arules)) { 
 
 ## Daten laden 
 data(Audioscrobbler)
@@ -62,6 +62,7 @@ Audioscrobbler.apriori <- apriori(
                   support = 0.0645, confidence = 0.8))
 
 inspect(Audioscrobbler.apriori)
+}
 }
 }
 \keyword{datasets}

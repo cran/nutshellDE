@@ -86,7 +86,8 @@ gleicher Länge des Eingabevektors zurück, die Missing-Codes sind durch
   \code{\link{ordered}()}. 
 }
 \examples{
-## faktorisieren() 
+\dontrun{
+## Funktion "faktorisieren()" 
 ## Beispiel 1: numerische Eingabedaten faktorisieren 
 Kodierung <- c("w" = 1, "m" = 2); 
 (Dummy <- rep(c(2, 1, 99), 10))
@@ -98,7 +99,7 @@ Kodierung <- c("w" = "a", "m" = "b");
 table(faktorisieren(Dummy, codes = Kodierung))
 
 
-## auf.NA.setzen() 
+## Funktion "auf.NA.setzen()" 
 ## Beispiel Anwendungsfall 1: Werte auf bestimmten Positionen auf NA setzen 
 ## Eingabedaten anlegen
 (Dummy <- c(1:10, rep(99, 2)))
@@ -114,5 +115,6 @@ auf.NA.setzen(Dummy, na.codes = Ausschluss)
 
 ## Wir wollen weder 99er noch 999er (!) Codes 
 auf.NA.setzen(Dummy, na.codes = c(99, 999))
+}
 }
 \keyword{utilities}

@@ -50,7 +50,8 @@ Pro-Kopf-Verzehr von Nahrungsmitteln in den USA, 1980-2005
   \code{\link{Google.Suche.nach.Bacon}}. 
 }
 \examples{
-library(lattice)
+\dontrun{
+if(require(lattice)) { 
 
 ## Daten laden 
 data(Verzehr)
@@ -59,5 +60,7 @@ data(Verzehr)
 dotplot(Menge ~ Jahr | Nahrungsmittel, data = Verzehr, 
         scales = list(relation = "sliced", cex = 0.4), 
         aspect = "xy")
+}
+}
 }
 \keyword{datasets}

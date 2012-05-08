@@ -98,7 +98,8 @@ Daten eines Reifen-Schnelllauftests (NHTSA, 2003)
   \emph{R in a Nutshell}, Kap. 15, 18. 
 }
 \examples{
-library(lattice)
+\dontrun{
+if(require(lattice)) { 
 
 ## Daten laden 
 data(Reifen.Schnelllauf)
@@ -108,5 +109,7 @@ dotplot(factor(Defekt.Geschwindigkeit) ~ Defekt.Zeit | Reifentyp,
   data = Reifen.Schnelllauf, 
   xlab = "Zeit bis zum Defekt (Std.)", 
   ylab = "Geschwindigkeit (km/h)")
+}
+}
 }
 \keyword{datasets}

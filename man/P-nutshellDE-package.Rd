@@ -11,8 +11,8 @@ Dieses Paket enthält alle Datensätze und eine kleine Auswahl
 Hilfsfunktionen, die als Beispiele in \emph{R in a Nutshell} 
 [deutsche Ausgabe] des O'Reilly Verlags verwendet werden 
 (ISBN 978-3-89721-649-5). Die komprimierte Paketdatei ist rund 
-40 MB groß, das entpackte und installierte Paket belegt etwa 
-70 MB Plattenspeicher. 
+30 MB groß, das entpackte und installierte Paket belegt etwa 
+60 MB Plattenspeicher. 
 }
 \details{
 \subsection{Urheberrechte und Lizenzierung}{
@@ -61,8 +61,8 @@ zu befassen).
 }
 }
 \note{
-Dass die Überschriften in dieser Dokumentation überwiegend englisch sind, 
-liegt an der Funktionsweise des R-Dokumentationsformats. 
+Das R-Dokumentationsformat ist leider nicht lokaliserbar. 
+Gliederungsüberschriften sind weitgehend festgelegt und in Englisch. 
 }
 \author{
 Joseph Adler (Autor des nutshell-Pakets); 

@@ -192,7 +192,8 @@ Datensatz "Spambase" der Hewlett-Packard-Labs
   \emph{R in a Nutshell}, Kap. 21. 
 }
 \examples{
-library(MASS)
+\dontrun{
+if(require(MASS)) { 
 
 ## Daten laden 
 data(SpamBase)
@@ -215,5 +216,7 @@ table(Tatsächlich  = SpamBase.Training$ist.Spam,
 table(Tatsächlich  = SpamBase.Test$ist.Spam, 
       Vorhergesagt = predict(Spam.qda, 
                              newdata = SpamBase.Test)$class)
+}
+}
 }
 \keyword{datasets}

@@ -68,6 +68,7 @@ Kurse der im Dow-Jones-Index notierten Unternehmen
   \code{\link{Kurse.abfragen}()}. 
 }
 \examples{
+\dontrun{
 ## Daten laden 
 data(Dow.Jones)
 
@@ -100,5 +101,6 @@ IQR(DJ$Eröffnung)
 
 ## Tukey's Five-Number-Statistik 
 fivenum(DJ$Eröffnung)
+}
 }
 \keyword{datasets}

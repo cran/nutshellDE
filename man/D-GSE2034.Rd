@@ -63,7 +63,8 @@ GSE2034 -- Patientendaten einer Brustkrebsstudie
   \emph{R in a Nutshell}, Kap. 20, 24. 
 }
 \examples{
-library(survival)
+\dontrun{
+if(require(survival)) { 
 
 ## Daten laden 
 data(GSE2034)
@@ -90,5 +91,7 @@ legend(150, 1, legend = Label, lty = Linien, cex = 0.5)
 ## Cox-Regression anpassen 
 (GSE2034.Cox <- coxph(Surv ~ Rezeptor.Status, 
                       data = GSE2034.Surv))
+}
+}
 }
 \keyword{datasets}

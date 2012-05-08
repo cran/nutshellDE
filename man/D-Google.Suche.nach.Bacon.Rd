@@ -44,11 +44,13 @@ Google-Anfragen mit dem Suchbegriff "Bacon"
   \code{\link{Verzehr}}. 
 }
 \examples{
+\dontrun{
 ## Daten laden
 data(Google.Suche.nach.Bacon)
 
 ## Unterschied zwischen \link[base]{class} und \link[base]{typeof}
 class(Google.Suche.nach.Bacon)
 typeof(Google.Suche.nach.Bacon)
+}
 }
 \keyword{datasets}

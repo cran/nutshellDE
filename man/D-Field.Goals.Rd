@@ -48,6 +48,7 @@ Field-Goal-Versuche in der National Football League, Saison 2005
   \emph{R in a Nutshell}, Kap. 3, 6, 16, 18, 21. 
 }
 \examples{
+\dontrun{
 ## Daten laden 
 data(Field.Goals)
 
@@ -80,5 +81,6 @@ plot(colnames(Field.Goals.XTab),
      xlab = "Entfernung (Yards)", 
      ylab = "Erfolg (Prozent)", 
      xaxp = c(20, 60, 8))
+}
 }
 \keyword{datasets}

@@ -44,26 +44,11 @@ Interne Hilfs- und Verwaltungsfunktionen
   befindet. 
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
-\value{
-%%  ~Describe the value returned
-}
 \author{
   Jörg Beyer <R-Programmierung@t-online.de> 
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
   \code{\link{Initialisierung}}. 
-}
-\examples{
-%% ~~examples ~~~
 }
 \keyword{package}
 \keyword{internal}

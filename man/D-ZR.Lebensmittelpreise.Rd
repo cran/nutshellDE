@@ -39,6 +39,7 @@ Truthahn- und Schinkenpreise in den USA
   \code{\link{Google.Suche.nach.Bacon}}. 
 }
 \examples{
+\dontrun{
 ## Daten laden 
 data(ZR.Truthahnpreise)
 data(ZR.Schinkenpreise)
@@ -51,5 +52,6 @@ plot(ZR.Truthahnpreise)
 
 ## Kreuzkorrelation 
 ccf(ZR.Truthahnpreise, ZR.Schinkenpreise, plot = FALSE)
+}
 }
 \keyword{datasets}

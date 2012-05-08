@@ -109,7 +109,8 @@ Immobilienpreise von Wohnobjekten im Raum San Francisco
   \code{\link{Shiller.Index}}.
 }
 \examples{
-library(lattice)
+\dontrun{
+if(require(lattice)) { 
 
 ## Daten laden 
 data(SanFrancisco.Immobilien.Preise)
@@ -135,5 +136,7 @@ xyplot(Preis ~ Grundfläche | ZIP,
   par.strip.text = list(cex = Skalen.cex, 
                         lines = 1.25), 
   layout = c(4, NA))
+}
+}
 }
 \keyword{datasets}

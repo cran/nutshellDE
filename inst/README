@@ -26,8 +26,9 @@ Nähere Informationen zu den Gründen erhalten Sie in der Paketdokumentation
 ERRATA
 
 Bedingt durch eine notwendige Änderung an der Paketstruktur nach Drucklegung 
-hat sich die Bestimmung des Pfads der SQLite-Datenbank "BBDB" geringfügig 
-geändert. Der Pfad muss jetzt mit 
+von "R in a Nutshell" [deutsche Ausgabe] hat sich die Bestimmung des Pfads 
+der SQLite-Datenbank "BBDB" ("BaseBall-DataBase") geringfügig geändert. 
+Der Pfad muss jetzt mit 
 
   system.file("extdata", "BBDB.sqlite", package = "nutshellDE")
 

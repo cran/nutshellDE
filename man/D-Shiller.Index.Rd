@@ -54,6 +54,7 @@ Robert J. Shillers US-Hauspreisindex
   \code{\link{SanFrancisco.Immobilien.Preise}}. 
 }
 \examples{
+\dontrun{
 ## Daten laden 
 data(Shiller.Index)
 
@@ -65,5 +66,6 @@ plot(Shiller.Index[, c("Jahr", "Hauspreisindex")],
      pch = 19, cex = 0.4)
 
 abline(reg = Hauspreise.LM,  lty = 1)
+}
 }
 \keyword{datasets}

@@ -14,19 +14,19 @@ lfd.Nr;Paket;Version;Plattform;Kapitel;Status;Level
 13;mlbench;2.0-0;R;20;verwendet;Voraussetzung
 14;ipred;0.8-8;R;20;verwendet;Übungen
 15;lars;0.9-7;R;20;verwendet;Übungen
-16;ks;1.6.13;R;20;verwendet;Voraussetzung
-17;prim;1.0.8;R;20;erwähnt;Übungen
-18;akima;0.5-4;R;20;erwähnt;Voraussetzung
-19;gam;1.03;R;20;erwähnt;Übungen
-20;modeltools;0.2-16;R;20;verwendet;Voraussetzung
-21;mvtnorm;0.9-92;R;20;verwendet;Voraussetzung
+16;mvtnorm;0.9-92;R;20;verwendet;Voraussetzung
+17;ks;1.6.13;R;20;verwendet;Übungen
+18;prim;1.0.8;R;20;erwähnt;Übungen
+19;akima;0.5-4;R;20;erwähnt;Voraussetzung
+20;gam;1.03;R;20;erwähnt;Übungen
+21;modeltools;0.2-16;R;20;verwendet;Voraussetzung
 22;coin;1.0-14;R;20;verwendet;Voraussetzung
 23;zoo;1.6-4;R;20;verwendet;Voraussetzung
 24;sandwich;2.2-6;R;20;verwendet;Voraussetzung
 25;strucchange;1.4-1;R;20;verwendet;Voraussetzung
 26;colorspace;1.0-1;R;20;verwendet;Voraussetzung
 27;vcd;1.2-8;R;20;verwendet;Voraussetzung
-28;party;0.9-9997;R;20;verwendet;Voraussetzung
+28;party;0.9-9997;R;20;verwendet;Übungen
 29;mboost;2.0-7;R;20;verwendet;Übungen
 30;randomForest;4.5-36;R;20, 21;verwendet;Übungen
 31;plotrix;3.0-0;R;20;verwendet;Voraussetzung

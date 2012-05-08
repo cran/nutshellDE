@@ -2,6 +2,43 @@
 ChangeLog zum Paket "nutshellDE" 
 ===========================================================================
 
+2012-05-07/08  Jörg Beyer
+  * Paket "nutshellDE" -- Veröffentlichung der Version 1.0-2. 
+  
+  
+  * Paket "nutshellDE" -- Korrekturen: 
+  Paketinitialisierungscode an Änderungen in R in Zusammenhang mit 
+  Namenräumen angepasst (defekt seit R 2.14.0). 
+
+
+
+2012-05-04 Jörg Beyer
+  * Paket "nutshellDE" -- Korrekturen: 
+  Wegen strengerer CRAN-Tests mussten ein paar (starke und schwache) 
+  Abhängigkeiten von anderen Paketen festgelegt werden. 
+  
+  library()-Aufrufe in den Beispielabschnitten der Paketdokumenation 
+  wurden durchgängig durch das Konstrukt  if(require()) { ... }  ersetzt 
+  (Abfangen von Problemen durch nicht installierte Abhängigkeiten). 
+  
+  Sämtliche Beispielabschnitte in der Paketdokumenation wurden explizit 
+  mit "\dontrun{}" deaktiviert (s. auch nächster Punkt). 
+  
+  Tests und hoffentlich Behebung der diversen Enkodierungs- bzw. 
+  Re-Enkodierungsprobleme, die die Build-Rechner des CRAN mit diesem 
+  Paket haben. 
+
+
+
+2012-04-12  Jörg Beyer
+  * Paket "nutshellDE" -- Korrekturen: 
+  Alle Datensätze wurden mit höherer Kompression neu abgespeichert. 
+  Das Paket ist jetzt rund 10 MB schlanker. 
+  
+  Bislang fehlende NAMESPACE-Datei wurde neu angelegt. 
+
+
+
 2011-02-02  Jörg Beyer
   * Paket "nutshellDE" -- Veröffentlichung der Version 1.0-1. 
   
@@ -9,7 +46,8 @@ ChangeLog zum Paket "nutshellDE"
   * Paket "nutshellDE" -- Korrekturen: 
   Datei DESCRIPTION, "Maintainer"-Feld: Änderung der Kontaktadresse 
   Datei "BBDB.sqlite" von "data/" nach "inst/extdata/" verschoben 
-  (Dank an Prof. B.D. Ripley, Oxford, UK, für die konstruktiven Hinweise) 
+  (Dank an Prof. B.D. Ripley, Oxford, UK, für die gewohnt konstruktiven 
+  Hinweise.) 
   
   Hinweis: Der Pfad zur Datenbank muss jetzt mit 
     system.file("extdata", "BBDB.sqlite", package = "nutshellDE") 

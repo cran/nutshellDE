@@ -1,11 +1,11 @@
 # ====================================================================
 # Funktionen zum Abfragen von Yahoo!-Finanzen: 
 # --------------------------------------------------------------------
-# Funktion zum Abfragen von Börsenkursen 
+# Funktion zum Abfragen von B\u00F6rsenkursen 
 # Autoren: Joseph Adler 
 #          J\u00F6rg Beyer (Fehlerkorrekturen, Fehlertoleranz) 
 # angelegt: 2009
-# ge\u00E4ndert: 2011-01-18 
+# ge\u00E4ndert: 2012-05-06 16:28:46 +0200 (MESZ)
 
 Kurse.abfragen <- function(ticker, 
   von = if (missing(bis)) (Sys.Date() - 365) else (bis - 365), 
@@ -20,8 +20,8 @@ Kurse.abfragen <- function(ticker,
   URL.Basis     <- "http://ichart.finance.yahoo.com/table.csv?";
   TickerCode    <- paste(sep = "", "s=", ticker);
   
-  # !!! Monate m\u00FCssen von '00' bis '11' durchnummeriert sein, also 
-  #     muss auf die korrekte Formatierung geachtet werden !!! 
+  # !!! Monate m\u00FCssen von '00' bis '11' durchnummeriert sein, und 
+  #     es muss auf die korrekte String-Formatierung geachtet werden !!! 
   von.MM        <- paste(sep = "", "&a=", 
     formatC((as.integer(format(von, "%m")) - 1), width = 2, flag = "0"));
   von.TT        <- paste(sep = "", "&b=", format(von, "%d"));

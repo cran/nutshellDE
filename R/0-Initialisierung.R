@@ -6,25 +6,25 @@
 # aufgerufen. 
 # Autor: J\u00F6rg Beyer (Copyright 2010 - heute)
 # angelegt: 2010-07-25 
-# ge\u00E4ndert: 2011-01-17 
+# ge\u00E4ndert: 2012-05-07 19:33:33 +0200 (MESZ)
 
 .initialize.package <- function(pkgname, admin.data = "Admin.rda") 
 { 
 	# (0)   Eingabeargumente pr\u00FCfen 
 	if(! is.character(pkgname) || length(pkgname) != 1) { 
-		msgStr 			<- paste(sep = "", 
+		errStr 			<- paste(sep = "", 
 			"Paketname ist kein Textwert der L\u00E4nge 1: ", 
 			paste(pkgname, sep = "", collapse = ", ") 
 			); 
-		stop(msgStr); 
+		stop(errStr); 
 	} 
 	
 	if(! is.character(admin.data) || length(admin.data) != 1) { 
-		msgStr 			<- paste(sep = "", 
+		errStr 			<- paste(sep = "", 
 			"Name der Verwaltungsdatendatei ist kein Textwert der L\u00E4nge 1: ", 
 			paste(pkgname, sep = "", collapse = ", ") 
 			); 
-		stop(msgStr); 
+		stop(errStr); 
 	} 
 	
 	
@@ -69,12 +69,8 @@
 			"Pr\u00FCfung l\u00E4uft -- bitte etwas Geduld... \n", 
 			""); 
 		
-##		cat(msgStr); 
-		writeLines(msgStr, con = stdout(), sep = ""); 
-		flush(stdout()); 
-		
-##		message(msgStr); 
-##		flush(stderr()); 
+		packageStartupMessage(msgStr, appendLF = FALSE); 
+		flush(stderr()); 
 		
 		
 		# (2.1) Namen von Datenobjekten anpassen 
@@ -110,8 +106,8 @@
 				"in Zukunft laden, werden Sie diese Meldung nicht mehr sehen. \n", 
 				"\n"); 
 			} 
-			cat(msgStr); 
-			flush(stdout()); 
+			packageStartupMessage(msgStr, appendLF = FALSE); 
+			flush(stderr()); 
 			
 			initRes <- TRUE; 
 		} 
@@ -124,8 +120,8 @@
 				"arbeiten, werden diese Meldungen aber bei jedem Laden des Pakets \n", 
 				"sehen, bis das Problem identifiziert und behoben ist. \n", 
 				"\n"); 
-			cat(msgStr); 
-			flush(stdout()); 
+			packageStartupMessage(msgStr, appendLF = FALSE); 
+			flush(stderr()); 
 			
 			initRes <- FALSE; 
 		} 
@@ -151,7 +147,7 @@
 # aufgerufen. 
 # Autor: J\u00F6rg Beyer (Copyright 2010 - heute)
 # angelegt: 2010-07-25 
-# ge\u00E4ndert: 2011-01-15 
+# ge\u00E4ndert: 2012-05-07 19:33:33 +0200 (MESZ)
 
 .getPkgAdminData <- function(pkgname, admin.data = "Admin.rda") 
 { 
@@ -168,7 +164,7 @@
 	# 
 	conditionHandler 	<- function(cond) 
 	{ 
-		msgStr 			<- paste(sep = "", 
+		errStr 			<- paste(sep = "", 
 			"\n", 
 			"Die Datei mit den Paketverwaltungsdaten ", 
 			sprintf("(\"%s\", \"%s\") ",  get("admin.data"), get("datapath"  )), "\n", 
@@ -178,7 +174,7 @@
 		
 ## *** Logging wird z.Z. nicht unterst\u00FCtzt 
 ##		.write.pkgAdminLog(msgStr); 
-		stop(msgStr, call. = FALSE); 
+		stop(errStr, call. = FALSE); 
 	} 
 	
 	
@@ -204,7 +200,7 @@
 # aufgerufen. 
 # Autor: J\u00F6rg Beyer (Copyright 2010 - heute)
 # angelegt: 2010-07-25 
-# ge\u00E4ndert: 2011-01-15 
+# ge\u00E4ndert: 2012-05-07 19:33:33 +0200 (MESZ)
 
 .adjustDataobjectNames <- function(pkgname, admin.data, envir) 
 { 
@@ -241,8 +237,8 @@
 		"=>  Objektnamen mit Umlauten und anderen Nicht-ASCII-Zeichen m\u00FCssen \n", 
 		"neu eingerichtet werden. \n", 
 		""); 
-	cat(msgStr); 
-	flush(stdout()); 
+	packageStartupMessage(msgStr, appendLF = FALSE); 
+	flush(stderr()); 
 	
 	
 	processObjectNames <- function(set, obj.inx, obj.chk) 
@@ -364,8 +360,9 @@
 				"Das Problem kann behoben werden, indem Sie sicherstellen, dass R die \n", 
 				"gesuchte Datei finden kann (Ablageort kontrollieren, ggf. Datei umbenennen). \n", 
 				""); 
-			cat(msgStr);  
-			flush(stdout()); 
+			packageStartupMessage(msgStr, appendLF = FALSE); 
+			flush(stderr()); 
+			
 			next; 
 		} 
 		
@@ -435,8 +432,8 @@
 					setname, datapath); 
 		} 
 		
-		cat(msgStr); 
-		flush(stdout()); 
+		packageStartupMessage(msgStr, appendLF = FALSE); 
+		flush(stderr()); 
 	} 
 	
 	

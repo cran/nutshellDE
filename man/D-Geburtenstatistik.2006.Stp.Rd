@@ -77,7 +77,8 @@ Zufallsstichprobe aus der US-Geburtenstatistik 2006
   \code{\link{auf.NA.setzen}()}. 
 }
 \examples{
-library(lattice)
+\dontrun{
+if(require(lattice)) { 
 
 ## Daten laden 
 data(Geburtenstatistik.2006.Stp)
@@ -101,5 +102,7 @@ densityplot(~ Geburtsgewicht,
   groups = AnzahlSäuglinge[, drop = TRUE], 
   data = Geburten.2006, 
   plot.points = FALSE, auto.key = TRUE)
+}
+}
 }
 \keyword{datasets}

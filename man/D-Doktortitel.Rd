@@ -53,6 +53,7 @@ Doktortitel, USA 2001-2006
   \emph{R in a Nutshell}, Kap. 14. 
 }
 \examples{
+\dontrun{
 ## Daten laden 
 data(Doktortitel)
 
@@ -69,5 +70,6 @@ barplot(Doktortitel.m, beside = TRUE, horiz = TRUE, legend.text = TRUE,
 ## Vertikal gestapeltes Balkendiagramm 
 barplot(t(Doktortitel.m), ylim = c(0, 66000), 
         legend.text = TRUE, args.legend = list(ncol = 2))
+}
 }
 \keyword{datasets}

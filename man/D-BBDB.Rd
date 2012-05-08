@@ -36,7 +36,7 @@ Die "Baseball-Databank", Ausgabe 2008
   gemacht: \cr
   \url{http://www.baseball-databank.org/}. \cr
   Die Datenbank-Dumps (Daten plus Strukturanweisungen) haben komprimiert 
-  ein Größe von 5 bis 10 MB. 
+  eine Größe von 5 bis 10 MB. 
 
   Englische Dokumentation zur Struktur einer \emph{annähernd} identisch 
   aufgebauten relationalen Datenbank ist hier zu finden (die Unterschiede 
@@ -62,7 +62,7 @@ Die "Baseball-Databank", Ausgabe 2008
 }
 \examples{
 \dontrun{
-library(RSQLite)
+if(require(RSQLite)) { 
 
 ## Treiber-Objekt und Datenbankverbindung aufbauen 
 Trb <- dbDriver("SQLite")
@@ -79,6 +79,7 @@ dbListFields(BBDB, name = "Master")
 ## und Treiber-Objekt entsorgen 
 dbDisconnect(BBDB)
 dbUnloadDriver(Trb)
+}
 }
 }
 \keyword{datasets}
